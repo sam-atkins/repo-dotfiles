@@ -19,6 +19,7 @@ rules:
   react/forbid-prop-types: off
   jsx-a11y/anchor-is-valid: off
   no-underscore-dangle: off
+  # no-console: off  # switch rule off for Node.js
   comma-dangle:
     - error
     - always-multiline
