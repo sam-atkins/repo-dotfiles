@@ -3,19 +3,23 @@
 root = true
 
 [*]
-end_of_line = lf
 charset = utf-8
-trim_trailing_whitespace = true
+end_of_line = lf
 insert_final_newline = true
+trim_trailing_whitespace = true
 
-[*.{js,yml,md,json,css}]
-indent_style = space
-indent_size = 2
-
-[Dockerfile]
-indent_style = space
-indent_size = 2
-
-[*.{py}]
-indent_style = space
+[*.py]
 indent_size = 4
+indent_style = space
+
+[*.go]
+indent_size = 4
+indent_style = tab
+
+[*.{conf,css,html,js,json,md,scss,sh,toml,ts,yaml,yml}]
+indent_size = 2
+indent_style = space
+
+[package.json]
+indent_size = 2
+indent_style = space
